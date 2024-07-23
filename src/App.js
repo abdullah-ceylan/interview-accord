@@ -1,5 +1,6 @@
 import './App.css';
 import InterviewAccord from './components/InterviewAccord';
+import data from "./helper/data"
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       </div>
       <div className='app'>
         <div className='main'>
-          <InterviewAccord />
+          <InterviewAccord data={data} />
         </div>
       </div>
     </>
