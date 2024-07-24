@@ -22,7 +22,7 @@ const Question = ({ id, question, answer }) => {
             <h5>
               {id}.{question}
             </h5>
-            <button onClick={() => setShow(false)}>{<FcExpand />}</button>
+            <button onClick={() => setShow(false)}>{<FcCollapse />}</button>
           </div>
           <p>{answer}</p>
         </div>
@@ -32,7 +32,7 @@ const Question = ({ id, question, answer }) => {
             <h5>
               {id}.{question}
             </h5>
-            <button onClick={() => setShow(true)}>{<FcCollapse />}</button>
+            <button onClick={() => setShow(true)}>{<FcExpand />}</button>
           </div>
         </div>
       )}
