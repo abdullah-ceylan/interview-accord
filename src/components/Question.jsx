@@ -5,6 +5,15 @@ import { FcExpand, FcCollapse } from "react-icons/fc";
 const Question = ({ id, question, answer }) => {
   const [show, setShow] = useState(false);
 
+  // const handleToggle = () => {
+  //   if(show){
+  //     setShow(false) if else yapısıyla da Toggle yapılabilir.
+  //   }else{
+  //     setShow(true)
+  //   }
+    //! setShow(!show) en kısa ve kullanisli yöntem bu
+  // }
+
   return (
     <div className="card-group">
       {show ? (
@@ -13,7 +22,7 @@ const Question = ({ id, question, answer }) => {
             <h5>
               {id}.{question}
             </h5>
-            <button>{<FcExpand />}</button>
+            <button onClick={() => setShow(false)}>{<FcExpand />}</button>
           </div>
           <p>{answer}</p>
         </div>
@@ -23,7 +32,7 @@ const Question = ({ id, question, answer }) => {
             <h5>
               {id}.{question}
             </h5>
-            <button>{<FcCollapse />}</button>
+            <button onClick={() => setShow(true)}>{<FcCollapse />}</button>
           </div>
         </div>
       )}
