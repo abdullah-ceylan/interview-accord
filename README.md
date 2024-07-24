@@ -13,7 +13,7 @@ This project aims to create a drop-down menu using the component structure, addi
 │    │       ├── InterviewAccord.jsx
 │    │       ├── Question.jsx
 │    ├── helper
-│    │       └── data.jsx
+│    │       └── data.js
 │    ├── App.js
 │    ├── App.css
 │    ├── index.js
